@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="max-w-5xl mx-auto py-6 px-2 sm:px-4">
+        <h1 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Your cart overview</h1>
+        <div class="flex flex-col gap-6 lg:flex-row">
+            <!-- Product Section -->
+            <div class="flex-1 bg-white rounded-lg shadow p-4 sm:p-6">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                    <img src="https://i.imgur.com/3Qz4M5L.png" alt="Flyers" class="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-lg border mx-auto sm:mx-0">
+                    <div class="flex-1">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h2 class="text-base sm:text-lg font-semibold">Flyers</h2>
+                            <span class="bg-orange-100 text-orange-700 text-xs font-bold px-2 py-1 rounded">DEAL</span>
+                        </div>
+                        <a href="#" class="text-blue-600 text-xs hover:underline block">Update to 1500 extra for just £20.91</a>
+                        <div class="mt-1 sm:mt-2">
+                            <a href="#" class="text-blue-500 text-xs sm:text-sm hover:underline">Product details</a>
+                        </div>
+                        <div class="mt-1 sm:mt-2 text-xs sm:text-sm text-gray-700">
+                            <div class="grid grid-cols-2 gap-x-2 gap-y-1 sm:gap-x-4">
+                                <span class="font-medium">Print run</span><span>1,000</span>
+                                <span class="font-medium">Size</span><span>A5</span>
+                                <span class="font-medium">Material type</span><span>Glossy</span>
+                                <span class="font-medium">Paper thickness</span><span>170gsm gloss</span>
+                                <span class="font-medium">Printing options</span><span>Double-sided</span>
+                                <span class="font-medium">Finishing</span><span>No finishing</span>
+                                <span class="font-medium">Bundling</span><span>Not bundled</span>
+                                <span class="font-medium">Delivery</span><span>5 working days</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 mt-2 sm:mt-3">
+                            <input type="checkbox" id="vat" class="form-checkbox">
+                            <label for="vat" class="text-xs text-gray-600">I need to pay VAT on this item</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-row sm:flex-col items-end sm:items-end gap-2 sm:gap-4 min-w-max mt-2 sm:mt-0">
+                        <span class="text-base sm:text-lg font-bold">£43.34</span>
+                        <div class="flex gap-2">
+                            <button title="Edit" class="text-gray-400 hover:text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 13l6-6m2 2l-6 6m2 2l-6 6m2-2l6-6" /></svg></button>
+                            <button title="Remove" class="text-gray-400 hover:text-red-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overview Section -->
+            <div class="w-full lg:w-80 bg-white rounded-lg shadow p-4 sm:p-6">
+                <h3 class="text-base sm:text-lg font-semibold mb-2">Overview</h3>
+                <div class="flex justify-between text-xs sm:text-sm py-1">
+                    <span>Total articles</span><span>£43.34</span>
+                </div>
+                <div class="flex justify-between text-xs sm:text-sm py-1 overview-premium-artwork">
+                    <span>Your premium artwork check</span><span>£7.13</span>
+                </div>
+                <div class="flex justify-between text-xs sm:text-sm py-1 overview-delivery">
+                    <span>Delivery</span><span>£3.99</span>
+                </div>
+                <div class="border-t my-2"></div>
+                <div class="flex justify-between font-semibold py-1 overview-subtotal">
+                    <span>Subtotal</span><span>£54.46</span>
+                </div>
+                <div class="flex justify-between text-xs sm:text-sm py-1">
+                    <span>VAT</span><span>£0.00</span>
+                </div>
+                <div class="flex justify-between text-base sm:text-lg font-bold py-2 overview-total">
+                    <span>Total</span><span>£54.46</span>
+                </div>
+                <button class="w-full mt-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded transition">PAY & UPLOAD FILES</button>
+                <div class="mt-4 text-xs text-gray-600">
+                    <span class="font-semibold">Next →</span> Address / Payment & Upload
+                </div>
+                <div class="mt-2 text-xs text-gray-600 flex items-center gap-1">
+                    <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" /></svg>
+                    You can upload your design after completing the order.
+                </div>
+                <div class="mt-3">
+                    <details class="text-xs">
+                        <summary class="cursor-pointer text-gray-700">Do you have a discount code?</summary>
+                        <input type="text" placeholder="Enter code" class="mt-2 w-full border rounded px-2 py-1 text-xs sm:text-sm">
+                    </details>
+                </div>
+                <div class="mt-2">
+                    <details class="text-xs">
+                        <summary class="cursor-pointer text-gray-700">Include your own reference number on the invoice</summary>
+                        <input type="text" placeholder="Reference number" class="mt-2 w-full border rounded px-2 py-1 text-xs sm:text-sm">
+                    </details>
+                </div>
+            </div>
+        </div>
+        <!-- Add-ons Section -->
+        <div class="mt-6 sm:mt-8 bg-white rounded-lg shadow p-4 sm:p-6">
+            <div class="flex flex-col gap-2">
+                <label class="flex flex-col xs:flex-row sm:flex-row items-start sm:items-center gap-2 cursor-pointer">
+                    <div class="flex-shrink-0"><input type="checkbox" checked class="form-checkbox mt-1 accent-blue-600" id="design-check"></div>
+                    <span class="flex-1 text-xs sm:text-sm"> <span class="font-semibold">Please check my designs.</span> Did you know that our design experts find mistakes in 40% of all design files?</span>
+                    <span class="text-green-700 font-semibold text-xs sm:text-sm">+ £7.13</span>
+                </label>
+                <label class="flex flex-col xs:flex-row sm:flex-row items-start sm:items-center gap-2 cursor-pointer">
+                    <div class="flex-shrink-0"><input type="checkbox" class="form-checkbox mt-1 accent-blue-600" id="secured-delivery"></div>
+                    <span class="flex-1 text-xs sm:text-sm"> <span class="font-semibold">Add Secured Delivery™.</span> Ensure priority support, fast reprints, and delivery guarantees for your order.</span>
+                    <span class="text-green-700 font-semibold text-xs sm:text-sm">+ £1.52</span>
+                </label>
+                <label class="flex flex-col xs:flex-row sm:flex-row items-start sm:items-center gap-2 cursor-pointer">
+                    <div class="flex-shrink-0"><input type="checkbox" class="form-checkbox mt-1 accent-blue-600" id="eco-support"></div>
+                    <span class="flex-1 text-xs sm:text-sm">Support the conservation of 3 trees in the Amazon rainforest.<span class="block text-xs text-gray-400">Powered by <span class="font-bold text-green-700">EcoCart</span></span></span>
+                    <span class="text-green-700 font-semibold text-xs sm:text-sm">+ £1.11</span>
+                </label>
+            </div>
+            <div class="mt-4 flex flex-col sm:flex-row items-start sm:items-center bg-blue-50 rounded p-3 text-xs sm:text-sm text-blue-700 gap-2">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" /></svg>
+                <span>Estimated order emissions: 26.15 kg of CO2 or the equivalent of 108 km driven by car.</span>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
